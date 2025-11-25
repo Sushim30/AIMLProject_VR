@@ -99,9 +99,9 @@ def run_loso():
 
         from visualize_subject import plot_time_series, scatter_plot, error_histogram
 
-        plot_time_series(preds, labels, test_subj)
-        scatter_plot(preds, labels, test_subj)
-        error_histogram(preds, labels, test_subj)
+        #plot_time_series(preds, labels, test_subj)
+        #scatter_plot(preds, labels, test_subj)
+        #error_histogram(preds, labels, test_subj)
 
 
     # --------------------------------------------------------

@@ -91,7 +91,7 @@ def run_loso_ssq(
 
         from visualize_loss import plot_loss_curves
 
-        plot_loss_curves(train_losses, val_losses, test_subj)
+        #plot_loss_curves(train_losses, val_losses, test_subj)
 
         # ---- Test ----
         test_loss, preds, labels = validate(
@@ -105,7 +105,7 @@ def run_loso_ssq(
             # normalize for nicer plot (0–1) just visually
             p_norm = (preds - preds.min()) / (preds.max() - preds.min() + 1e-8)
             l_norm = (labels - labels.min()) / (labels.max() - labels.min() + 1e-8)
-            plot_time_series(p_norm.cpu(), l_norm.cpu(), f"{test_subj} (SSQ Total, normalized)")
+            #plot_time_series(p_norm.cpu(), l_norm.cpu(), f"{test_subj} (SSQ Total, normalized)")
         except Exception as e:
             print(f"[WARN] Could not plot for subject {test_subj}: {e}")
 

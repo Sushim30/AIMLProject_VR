@@ -85,7 +85,7 @@ def run_loso_seq(seq_len=10, epochs=20, batch_size=32, lr=1e-4):
 
         from visualize_loss import plot_loss_curves
 
-        plot_loss_curves(train_losses, val_losses, test_subj)
+        #plot_loss_curves(train_losses, val_losses, test_subj)
 
 
 
